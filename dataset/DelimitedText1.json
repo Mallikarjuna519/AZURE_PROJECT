@@ -1,0 +1,40 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "STUDENT_DETAILS.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "STUD_ID",
+				"type": "String"
+			},
+			{
+				"name": "STUD_NAME",
+				"type": "String"
+			},
+			{
+				"name": "MARKS",
+				"type": "String"
+			},
+			{
+				"name": "COURCE",
+				"type": "String"
+			}
+		]
+	}
+}
