@@ -1,0 +1,9 @@
+{
+	"name": "mallikharjunaADF",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b0516745-4529-4611-9669-065c5db93266",
+		"tenantId": "0cbc7c49-9a60-4136-885e-de1a95112d4b"
+	}
+}
