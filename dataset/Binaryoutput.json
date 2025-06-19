@@ -1,0 +1,19 @@
+{
+	"name": "Binaryoutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragelsoutput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "stud_det.csv",
+				"folderPath": "output",
+				"container": "staging"
+			}
+		}
+	}
+}
