@@ -74,6 +74,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"sourcepath": {
+				"type": "string"
+			},
+			"sourcefilename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
