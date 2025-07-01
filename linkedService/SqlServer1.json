@@ -1,0 +1,31 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"servername": {
+				"type": "String"
+			},
+			"DbName": {
+				"type": "String"
+			},
+			"userName": {
+				"type": "String"
+			},
+			"password": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "@{linkedService().servername}",
+			"database": "@{linkedService().DbName}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().userName}",
+			"password": "@{linkedService().password}"
+		}
+	}
+}
